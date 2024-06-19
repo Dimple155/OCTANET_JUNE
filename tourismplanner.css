@@ -1,0 +1,90 @@
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #faa8e0, #dffa88);
+}
+
+.header {
+    text-align: center;
+    padding: 50px;
+    background: #0f0f0f;
+    color: rgb(239, 250, 90);
+    animation: fadeIn 5s;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+.header p {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.planner-form {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    animation: slideIn 1.5s;
+}
+
+.planner-form label {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1em;
+}
+
+.planner-form select, 
+.planner-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #541bcf;
+    border-radius: 2px;
+}
+
+.planner-form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #0cca61;
+    color: rgb(12, 18, 4);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background 0.3s;
+}
+
+.planner-form button:hover {
+    background: #d1f85b;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: #e70db4;
+    color: rgb(242, 216, 45);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
